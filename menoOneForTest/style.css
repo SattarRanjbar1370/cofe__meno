@@ -1,0 +1,32 @@
+/* stting one */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: rgb(21, 20, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* continer */
+
+div.continer {
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* header */
+
+
+/* base meno */
