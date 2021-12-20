@@ -88,3 +88,24 @@ div.pnglogo img {
     width: 350px;
     height: auto;
 }
+
+
+/* respansive */
+
+@media screen and (max-width:900px) {
+    div.continer {
+        width: 80%;
+    }
+    div.header {
+        align-items: center;
+    }
+    div.contant {
+        width: 47%;
+    }
+    div.headrol1 img {
+        height: 160px;
+    }
+    div.pnglogo img {
+        width: 300px;
+    }
+}
