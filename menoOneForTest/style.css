@@ -8,10 +8,26 @@
 }
 
 body {
+    direction: rtl;
     background-color: rgb(21, 20, 80);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 244, 208);
+}
+
+
+/* list fit */
+
+div.listfit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    margin: 3px;
+    padding: 2px;
 }
 
 
@@ -19,8 +35,9 @@ body {
 
 div.continer {
     width: 70%;
-    border: 2px solid black;
+    border: 4px solid rgb(255, 244, 208);
     border-radius: 10px;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
 }
@@ -30,3 +47,25 @@ div.continer {
 
 
 /* base meno */
+
+div.boder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* right meno and contant */
+
+div.contant {
+    width: 40%;
+}
+
+div.elementBase,
+div.listfit,
+div.setdoc {
+    width: 100%;
+}
+
+
+/* box main vaade */
