@@ -45,6 +45,20 @@ div.continer {
 
 /* header */
 
+div.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-end;
+    border-bottom: 4px solid rgb(255, 244, 208);
+    padding: 15px;
+}
+
+div.headrol1 img {
+    height: 180px;
+}
+
 
 /* base meno */
 
@@ -69,3 +83,8 @@ div.setdoc {
 
 
 /* box main vaade */
+
+div.pnglogo img {
+    width: 350px;
+    height: auto;
+}
