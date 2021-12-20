@@ -109,3 +109,23 @@ div.pnglogo img {
         width: 300px;
     }
 }
+
+@media screen and (max-width:749px) {
+    div.continer {
+        width: 85%;
+    }
+    div.pnglogo {
+        width: auto;
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    div.pnglogo img {
+        width: 230px;
+    }
+    div.listfit {
+        border: none;
+        border-bottom: 1px solid rgb(255, 244, 208);
+    }
+}
