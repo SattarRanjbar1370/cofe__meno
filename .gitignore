@@ -79,3 +79,18 @@
 *.wps
 
 # End of https://www.toptal.com/developers/gitignore/api/images,text
+
+
+# Created by https://www.toptal.com/developers/gitignore/api/font
+# Edit at https://www.toptal.com/developers/gitignore?templates=font
+
+### Font ###
+*.fnt
+*.fon
+*.otf
+*.ttf
+*.eot
+*.woff
+*.woff2
+
+# End of https://www.toptal.com/developers/gitignore/api/font
