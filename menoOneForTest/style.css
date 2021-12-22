@@ -7,22 +7,13 @@
     border: 0;
 }
 
-@font-face {
-    font-family: 'hekayat';
-    src: url(hekayat-typeface/hekayat.ttf)format(ttf);
-}
-
 body {
     direction: rtl;
     background-image: url(5494874103_fe35039a9e_3k.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: hekayat;
-    font-size: 1.5em;
-    /* font-style: bold; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* color: rgb(255, 244, 208); */
 }
 
@@ -34,7 +25,7 @@ div.listfit {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid;
+    border: 1px solid;
     margin: 3px;
     padding: 2px;
 }
@@ -49,7 +40,6 @@ div.continer {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
-    /* text-shadow: 1px 0px 8px #112b8b; */
 }
 
 
@@ -136,7 +126,7 @@ div.pnglogo img {
     }
     div.listfit {
         border: none;
-        border-bottom: 3px solid rgb(5, 5, 5);
+        border-bottom: 1px solid rgb(5, 5, 5);
     }
 }
 
