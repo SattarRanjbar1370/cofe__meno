@@ -1,3 +1,28 @@
+/* font style and external */
+
+@font-face {
+    font-family: "b arash";
+    src: url(B-Arash/B\ Arash.ttf)format(ttf);
+    font: bold;
+}
+
+@font-face {
+    font-family: dastneviseng;
+    src: url(Diamond_Signature_Handwritten_Font/Diamond\ Signature.woff);
+}
+
+@font-face {
+    font-family: walionfont;
+    src: url(Wendell/Wendell-Bold.ttf);
+    font: bold;
+}
+
+@font-face {
+    font-family: nastaliq;
+    src: url(nastealiq/IranNastaliq.woff)format(woff);
+}
+
+
 /* stting one */
 
 * {
@@ -9,11 +34,15 @@
 
 body {
     direction: rtl;
-    background-image: url(5494874103_fe35039a9e_3k.jpg);
+    background-image: url(photos_2021_3_17_fst_cardboard-honeycomb.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    /* background-size: cover; */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "b arash";
+    font-size: 1.5em;
     /* color: rgb(255, 244, 208); */
 }
 
@@ -25,7 +54,7 @@ div.listfit {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid;
+    border-bottom: 1px solid;
     margin: 3px;
     padding: 2px;
 }
@@ -45,7 +74,8 @@ div.continer {
 
 /* header */
 
-div.header {
+
+/* div.header {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -57,6 +87,60 @@ div.header {
 
 div.headrol1 img {
     height: 180px;
+} */
+
+div.head-load {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 30px;
+    border-bottom: 2px dotted black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.box-load {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.box1 {
+    flex-direction: row;
+    font-family: walionfont;
+    font-size: 1.3em;
+}
+
+div.box2 {
+    flex-direction: column;
+}
+
+div.box1 div {
+    margin: 0 20px;
+    font-family: walionfont;
+}
+
+div.box1 ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+li.insta-log p,
+.insta-log img {
+    margin: 0 3px;
+}
+
+li.insta-log img {
+    transform: matrix();
+}
+
+div.fotmeno2 h2 {
+    text-shadow: -1px 2px 13px #14c5e5;
+    color: #2521689e;
+    font-family: dastneviseng;
 }
 
 
@@ -90,9 +174,30 @@ div.pnglogo img {
 }
 
 
+/* footer */
+
+div.footer {
+    height: 25vh;
+    font-family: walionfont;
+    padding: 0 20px;
+    margin-top: 30px;
+    border-top: 2px black dotted;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
 /* respansive */
 
 @media screen and (max-width:960px) {
+    div.box-load {
+        flex-direction: column;
+    }
+    div.head-load {
+        flex-direction: row;
+    }
     div.continer {
         width: 80%;
     }
@@ -131,6 +236,9 @@ div.pnglogo img {
 }
 
 @media screen and (max-width:570px) {
+    div.head-load {
+        flex-direction: column;
+    }
     div.continer {
         border: none;
     }
