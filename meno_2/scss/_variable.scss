@@ -5,3 +5,19 @@ $color-head:#5d6b00;
     width: 190px;
     height: 80px;
 }
+
+%width-icon {
+    display: inline-block;
+    width: 64px;
+    height: auto;
+    margin: 0 3px;
+}
+
+%flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}

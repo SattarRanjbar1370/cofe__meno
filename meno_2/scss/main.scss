@@ -1,0 +1,65 @@
+@import 'variable';
+
+/* setting all */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+div.continer {
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    div.box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* ////////////////// box1 ////////////////// */
+        &1 {
+            width: 295px;
+            @extend %flex-column-center;
+            .boxmenu1 {
+                @extend %flex-column-center;
+                img {
+                    @extend %faceimag;
+                    margin-bottom: 5px;
+                }
+                p {
+                    margin: 0;
+                    margin-right: 50px;
+                    font-size: 24px;
+                    &.number {
+                        &::after {
+                            content: url(../image/12-2.png);
+                            @extend %width-icon
+                        }
+                    }
+                    &.insta {
+                        &::after {
+                            content: url(../image/13-2.png);
+                            @extend %width-icon
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* box2 */
+
+div.boxmenu2 {
+    div {
+        div {
+            p {}
+            span {
+                display: block;
+            }
+        }
+    }
+}

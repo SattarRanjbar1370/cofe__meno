@@ -1,0 +1,65 @@
+div.continer div.box1 .boxmenu1 img {
+  width: 190px;
+  height: 80px;
+}
+
+div.continer div.box1 .boxmenu1 p.insta::after, div.continer div.box1 .boxmenu1 p.number::after {
+  display: inline-block;
+  width: 64px;
+  height: auto;
+  margin: 0 3px;
+}
+
+div.continer div.box1 .boxmenu1, div.continer div.box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+/* setting all */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+div.continer {
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+}
+div.continer div.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* ////////////////// box1 ////////////////// */
+}
+div.continer div.box1 {
+  width: 295px;
+}
+div.continer div.box1 .boxmenu1 img {
+  margin-bottom: 5px;
+}
+div.continer div.box1 .boxmenu1 p {
+  margin: 0;
+  margin-right: 50px;
+  font-size: 24px;
+}
+div.continer div.box1 .boxmenu1 p.number::after {
+  content: url(../image/12-2.png);
+}
+div.continer div.box1 .boxmenu1 p.insta::after {
+  content: url(../image/13-2.png);
+}
+
+/* box2 */
+div.boxmenu2 div div span {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
