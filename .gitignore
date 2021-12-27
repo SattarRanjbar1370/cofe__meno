@@ -55,7 +55,7 @@
 
 # X BitMap
 *.xbm
-
+*.rar
 # BMP
 *.bmp
 *.dib
@@ -94,3 +94,9 @@
 *.woff2
 
 # End of https://www.toptal.com/developers/gitignore/api/font
+B-Arash/
+Diamond_Signature_Handwritten_Font/
+hekayat-typeface/
+Journey 5xOTF/
+nastealiq/
+Wendell/
