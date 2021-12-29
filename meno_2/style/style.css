@@ -3,13 +3,18 @@ div.boxmenu1 div img {
   height: 80px;
 }
 
-div.boxmenu ul li.listNameMenu, div.continer {
+div.box1 div div div, div.boxmenu ul li.listNameMenu, div.continer, div.boximg3, div.boximg2, div.boximg div.boxmenu {
   display: flex;
   flex-direction: row;
 }
 
 div.boxmenu ul li.listNameMenu {
   justify-content: space-between;
+}
+
+div.boximg3, div.boximg2, div.box1 div div {
+  display: flex;
+  flex-direction: column;
 }
 
 div.boxmenu {
@@ -21,6 +26,11 @@ div.boxmenu {
   align-self: center;
 }
 
+div.boximg3, div.boximg2, div.boximg div.boxmenu {
+  width: 100%;
+  border: none;
+}
+
 @font-face {
   font-family: entezar;
   src: url(../font/Entezar/Entezar1_v2.0.1.ttf);
@@ -28,6 +38,10 @@ div.boxmenu {
 @font-face {
   font-family: qafori;
   src: url(../font/q_ghafoori.ttf);
+}
+@font-face {
+  font-family: century;
+  src: url(../font/Century_Gothic.ttf);
 }
 * {
   margin: 0;
@@ -39,6 +53,7 @@ div.boxmenu {
 div.continer {
   font-family: qafori;
   direction: rtl;
+  margin-top: 10px;
 }
 
 div.boxmenu {
@@ -47,6 +62,8 @@ div.boxmenu {
 div.boxmenu h3 {
   font-size: 24px;
   color: #5d6b00;
+  display: block;
+  width: 80%;
 }
 div.boxmenu ul {
   width: 75%;
@@ -60,8 +77,22 @@ div.boxmenu ul li.menuUnder {
   font-size: 8px;
   margin: 0 5px;
 }
-div.box1 {
-  width: 255px;
+
+div.box {
+  width: 250px;
+}
+
+div.box1 div div div {
+  direction: ltr;
+}
+div.box1 div div div img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+div.boxhead {
+  font-family: century;
 }
 
 div.boxmenu1 div img {
@@ -72,8 +103,41 @@ div.boxmenu4 {
   border-bottom: none;
 }
 
-div.boximg div {
-  border: none;
+div.boximg {
+  width: 175px;
+}
+div.boximg div.boxmenu {
+  width: 100%;
+}
+div.boximg div.boxmenu1 {
+  justify-content: left;
+}
+div.boximg div.boxmenu2 {
+  justify-content: right;
+  margin-right: 10px;
+}
+div.boximg div.boxmenu3 {
+  justify-content: right;
+}
+div.boximg21 {
+  justify-content: center;
+}
+div.boximg22 {
+  justify-content: right;
+  margin-right: 10px;
+}
+div.boximg23 {
+  justify-content: center;
+}
+div.boximg31 {
+  justify-content: right;
+}
+div.boximg32 {
+  justify-content: center;
+}
+div.boximg33 {
+  justify-content: left;
+  margin-left: 10px;
 }
 
 div.box2 {
@@ -83,14 +147,105 @@ div.box2 div {
   width: 100%;
 }
 
-img.pixal1 {
+div.boximg1 div img.pixal {
+  margin-top: 125px;
+}
+div.boximg1 div img.pixal1 {
   width: 90px;
 }
-img.pixal2 {
+div.boximg1 div img.pixal2 {
   width: 115px;
 }
-img.pixal3 {
+div.boximg1 div img.pixal3 {
   width: 165px;
+}
+
+div.boximg2 div img.pixal1 {
+  margin-top: 140px;
+  width: 165px;
+}
+div.boximg2 div img.pixal2 {
+  margin-top: 170px;
+  width: 90px;
+}
+div.boximg2 div img.pixal3 {
+  margin-top: 225px;
+  width: 200px;
+}
+
+div.boximg3 {
+  width: 110px;
+}
+div.boximg3 div img.pixal1 {
+  margin-top: 15px;
+  width: 120px;
+}
+div.boximg3 div img.pixal2 {
+  margin-top: 200px;
+  width: 90px;
+}
+div.boximg3 div img.pixal3 {
+  margin-top: 170px;
+  width: 80px;
+}
+div.boximg3 div img.pixal4 {
+  margin-top: 130px;
+  width: 110px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  div.continer {
+    flex-wrap: wrap;
+  }
+  div.continer div.box {
+    width: 45%;
+  }
+  div.continer div.box div.boxmenu ul li {
+    font-size: 25px;
+  }
+  div.continer div.box div.boxmenu ul li.menuUnder {
+    font-size: 20px;
+  }
+  div.continer div.boximg {
+    display: block;
+  }
+  div.continer div.boximg div.boxmenu {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  div.continer div.boximg div.boxmenu img {
+    margin: none;
+    width: 180px;
+  }
+  div.continer div.box6 div.boxmenu3 img.pixal3 {
+    display: none;
+  }
+
+  div.boxmenu4 {
+    border-bottom: 2px dotted #5d6b00;
+  }
+
+  div.endlogo img {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  div.continer {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.continer div.box {
+    width: 85%;
+  }
+  div.continer div.box div.boxmenu h3 {
+    width: auto;
+  }
+  div.continer div.boximg div.boxmenu2, div.continer div.boximg div.boxmenu3 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

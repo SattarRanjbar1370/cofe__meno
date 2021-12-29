@@ -37,6 +37,12 @@ $color-border:#5d6b00;
     align-self: center;
 }
 
+%boxmenuset {
+    width: 100%;
+    border: none;
+    @extend %flex-row;
+}
+
 @font-face {
     font-family: entezar;
     src: url(../font/Entezar/Entezar1_v2.0.1.ttf);
@@ -47,5 +53,11 @@ $color-border:#5d6b00;
     src: url(../font/q_ghafoori.ttf);
 }
 
+@font-face {
+    font-family: century;
+    src: url(../font/Century_Gothic.ttf);
+}
+
 $fontface: entezar;
 $font-qafori: qafori;
+$font-century: century;
