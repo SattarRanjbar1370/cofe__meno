@@ -1,0 +1,105 @@
+@import 'variable';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.continer {
+    direction: rtl;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    &.pixal {
+        width: 150px;
+    }
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    color: $color-head;
+}
+
+div.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: $fontface;
+    &1 {
+        div.boxmenu {
+            &1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                div {
+                    img {
+                        width: 250px;
+                        margin: 5px;
+                    }
+                    &.info-head {
+                        font-family: $font-century;
+                        margin: 5px;
+                        div {
+                            img {
+                                width: 16px;
+                                height: auto;
+                            }
+                            display: flex;
+                            flex-direction: row-reverse;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+        div.pic1 {
+            width: 150px;
+        }
+    }
+}
+
+div.boxmenu {
+    border-bottom: 3px dotted $color-border;
+    width: 50%;
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        li {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width:926px) {
+    div.continer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    img {
+        &.pixal {
+            width: 90px;
+        }
+    }
+}
+
+@media screen and (max-width:720px) {
+    div.continer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

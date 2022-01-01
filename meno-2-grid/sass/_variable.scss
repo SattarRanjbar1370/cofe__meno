@@ -1,0 +1,63 @@
+$color-back:#fefefe;
+$color-dork:#272727;
+$color-head:#5d6b00;
+$color-border:#5d6b00;
+%faceimag {
+    width: 190px;
+    height: 80px;
+}
+
+%width-icon {
+    display: inline-block;
+    width: 64px;
+    height: auto;
+    margin: 0 3px;
+}
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+%justify-content {
+    justify-content: space-between;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+%flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+%boxmenuset {
+    width: 100%;
+    border: none;
+    @extend %flex-row;
+}
+
+@font-face {
+    font-family: entezar;
+    src: url(../font/Entezar/Entezar1_v2.0.1.ttf);
+}
+
+@font-face {
+    font-family: qafori;
+    src: url(../font/q_ghafoori.ttf);
+}
+
+@font-face {
+    font-family: century;
+    src: url(../font/Century_Gothic.ttf);
+}
+
+$fontface: entezar;
+$font-qafori: qafori;
+$font-century: century;
