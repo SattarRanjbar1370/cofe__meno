@@ -1,0 +1,102 @@
+div.continer div.box {
+  width: 85% !important;
+  margin: 5px auto;
+  position: relative !important;
+}
+
+div.continer div.box1 div.boxmenu2 {
+  margin-top: 200px !important;
+}
+
+div.continer div.box5 div.boxmenu4 {
+  border: 0;
+}
+
+div.continer div.boximg {
+  display: none !important;
+  width: 0;
+  height: 0;
+}
+
+div.continer div.boximgboxmenu {
+  height: 0 !important;
+}
+
+div.continer div.boxhead {
+  border: 0 !important;
+  position: relative;
+  margin-bottom: 200px !important;
+}
+
+div.continer div.boxhead div.logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+div.continer div.boxhead div.info-head {
+  position: absolute;
+  top: 90px;
+  right: 30px;
+}
+
+div.continer div.boxmenu {
+  width: 100%;
+}
+
+h3 {
+  display: block;
+  width: 100% !important;
+  text-align: center;
+}
+
+div.box-img-phone img {
+  display: block !important;
+  height: auto !important;
+  position: absolute;
+}
+
+div.box-img-phone1 img {
+  width: 85px !important;
+  top: 135px;
+  left: 15;
+}
+
+div.box-img-phone2 img {
+  width: 90px !important;
+  top: 903px;
+  left: -28px;
+}
+
+div.box-img-phone3 img {
+  width: 85px;
+  right: -40px;
+  top: 358px;
+}
+
+div.box-img-phone4 img {
+  width: 116px;
+  left: -5px;
+  top: 97%;
+}
+
+div.box-img-phone5 img {
+  width: 120px;
+  right: -20px;
+}
+
+div.box-img-phone6 img {
+  width: 85px;
+  right: 0;
+}
+
+div.box-img-phone7 {
+  width: 100%;
+}
+
+div.box-img-phone7 img {
+  width: 150px;
+  position: static;
+  margin: 150px auto 10px;
+}
+/*# sourceMappingURL=main.css.map */
