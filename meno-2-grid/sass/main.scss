@@ -6,6 +6,9 @@
 }
 
 div.continer {
+    background-image: url('../image/Background-Generator-c1.gif');
+    background-position: center;
+    background-size: cover;
     direction: rtl;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
