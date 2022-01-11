@@ -9,9 +9,33 @@ body{
     direction: rtl;
     background-color: $color-back;
 }
+hr{
+    border: 2px dotted;
+    width: 60%;
+    height: 0;
+}
 
 div.continer{
   color: $color-font;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 90%;
+   div.box{
+       div.cell{
+           h2{}
+            ul{
+               li{
+                   span{
+                       display: flex;
+                       justify-content: space-around;
+                       align-items: center;
+                   }
+                   &:last-child{
+                       width: 100%;
+
+                   }
+               } 
+            }
+       }
+   }
 }
