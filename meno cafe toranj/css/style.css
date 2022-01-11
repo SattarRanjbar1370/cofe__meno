@@ -6,13 +6,28 @@
 
 body {
   direction: rtl;
+  background-color: black;
+}
+
+hr {
+  border: 1px dotted;
+  width: auto;
+  height: 0;
 }
 
 div.continer {
-  background-color: black;
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 90%;
+}
+div.continer div.box div.cell h2 {
+  text-align: right;
+}
+div.continer div.box div.cell ul li:first-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
