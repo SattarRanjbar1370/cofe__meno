@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  background-color: black;
+  color: white;
+}
+
+hr {
+  border: 1px dotted;
+  width: 75%;
+  height: 0;
+}
+
+div.header {
+  color: white;
+}
+
+div.header div {
+  width: 80vw;
+  margin: 30px auto;
+}
+
+div.header div img {
+  width: 100%;
+}
+
+div.header div h1 {
+  text-align: center;
+  font-size: 3em;
+  width: 100%;
+  margin: 20px auto;
+}
+
+div.continer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-column-gap: 12%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+div.continer div.box div.cell h2 {
+  width: 80%;
+  margin: 10px auto;
+  text-align: right;
+}
+
+div.continer div.box div.cell ul li {
+  list-style-type: none;
+}
+
+div.continer div.box div.cell ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+}
+
+div.continer div.box div.cell ul li span.for2 {
+  width: 100%;
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */
