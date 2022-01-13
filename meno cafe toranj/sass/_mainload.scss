@@ -1,3 +1,9 @@
 $color-back : rgb(0, 0, 0);
 $color-font : hsl(0, 0%, 100%);
+$color-font2 : hsl(0, 0%, 84%);
+@font-face {
+    font-family: entezar;
+    src: url(../font/entezarzohoor/persian-entezar10.ttf);
+}
 
+$fontname : entezar;

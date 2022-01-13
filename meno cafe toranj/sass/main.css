@@ -1,3 +1,8 @@
+@font-face {
+  font-family: entezar;
+  src: url(../font/entezarzohoor/persian-entezar10.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,9 +37,10 @@ div.header div img {
 
 div.header div h1 {
   text-align: center;
-  font-size: 3em;
+  font-size: 50px;
   width: 100%;
   margin: 20px auto;
+  color: #d6d6d6;
 }
 
 div.continer {
@@ -45,7 +51,7 @@ div.continer {
   grid-gap: 20px;
   grid-column-gap: 12%;
   width: 90%;
-  margin: 0 auto;
+  margin: 10 auto;
 }
 
 div.continer div.box div.cell h2 {
@@ -75,5 +81,107 @@ div.continer div.box div.cell ul li span.for2 {
   display: block;
   width: 85%;
   margin: 0 auto;
+}
+
+div.footer {
+  width: 95vw;
+  margin: 30px auto 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.footer div.foot {
+  width: 30%;
+}
+
+div.footer div.foot1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.footer div.foot1 div.boxfot {
+  margin: 0 10px;
+}
+
+div.footer div.foot1 div.boxfot img {
+  width: 20vw;
+  height: auto;
+}
+
+div.footer div.foot1 div.boxfot2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+}
+
+div.footer div.foot1 div.boxfot2 div img {
+  margin: 0 5px;
+  width: 25px;
+  height: auto;
+}
+
+div.footer div.foot2 img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 540px) {
+  div.continer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  div.footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.footer div.foot {
+    width: 80%;
+    margin: 20px 0;
+  }
+  div.footer div.foot1 div.boxfot img {
+    width: 20vw;
+    height: auto;
+  }
+  div.footer div.foot2 {
+    text-align: center;
+  }
+  div.footer div.foot2 img {
+    width: 70%;
+    height: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
