@@ -36,7 +36,7 @@ div.header{
 
 div.continer{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   grid-column-gap: 12%;
   width: 90%;
@@ -53,9 +53,9 @@ div.continer{
                    list-style-type: none;
                    span{
                        display: flex;
-                       justify-content: space-around;
+                       justify-content: center;
                        align-items: center;
-                       margin: 5px 0;
+                       margin: 5px 3px;
                    &.for2{
                        width: 100%;
                        display: block;
@@ -109,6 +109,11 @@ div.footer{
                 height: auto;
             }
         }
+    }
+}
+@media screen and (max-width:920px) {
+    div.continer{
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media screen and (max-width:540px) {

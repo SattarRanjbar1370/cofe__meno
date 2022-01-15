@@ -46,8 +46,8 @@ div.header div h1 {
 div.continer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   grid-column-gap: 12%;
   width: 90%;
@@ -68,12 +68,13 @@ div.continer div.box div.cell ul li span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5px 0;
+  margin: 5px 3px;
 }
 
 div.continer div.box div.cell ul li span.for2 {
@@ -152,6 +153,13 @@ div.footer div.foot1 div.boxfot2 div img {
 div.footer div.foot2 img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 920px) {
+  div.continer {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 540px) {
