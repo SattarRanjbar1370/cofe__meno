@@ -10,4 +10,39 @@ body{
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    color: $color-font;
+    direction: rtl;
+    
+}
+div.continer{
+    @extend %flex-column-center;
+    div.header{
+        @extend %flex-column-center;
+        margin: 3rem 0;
+        div.head{
+            img{
+                width: 60vw;
+                margin: 0 0 2rem;
+            }
+            div{
+                &.boxnum{
+                    @extend %flex-row-re;
+                }
+                img{
+                    width: 1rem;
+                    margin: 0 1rem;
+                }
+            }
+            &2{
+                @extend %flex-row-re;
+                font-size: 1rem;
+            }
+            &3{
+                h1{
+                    font-family: $font-head;
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
 }

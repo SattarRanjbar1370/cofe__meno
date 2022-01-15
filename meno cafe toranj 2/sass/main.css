@@ -1,3 +1,40 @@
+div.continer, div.continer div.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.continer div.header div.head div.boxnum, div.continer div.header div.head2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@font-face {
+  font-family: matin;
+  src: url("../font-pack/Mj_Matin_0.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,5 +48,30 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  color: #e4c185;
+  direction: rtl;
+}
+
+div.continer div.header {
+  margin: 3rem 0;
+}
+
+div.continer div.header div.head img {
+  width: 60vw;
+  margin: 0 0 2rem;
+}
+
+div.continer div.header div.head div img {
+  width: 1rem;
+  margin: 0 1rem;
+}
+
+div.continer div.header div.head2 {
+  font-size: 1rem;
+}
+
+div.continer div.header div.head3 h1 {
+  font-family: matin;
+  font-size: 3rem;
 }
 /*# sourceMappingURL=main.css.map */
